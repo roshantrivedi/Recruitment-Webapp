@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+ 
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("j3.jpg");
+
+  min-height: 580px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 15px;
+  max-width: 290px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button 0B6FB4 */
+.btn {
+  background-color: #3293D6;
+  color: pink;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+<title>Hire Me</title>
+<ul>
+  <li><a href="aboutus.jsp">ABOUT US</a></li>
+  <li><a href="#" onclick="alert('You have to login first!!!');">JOB SEARCH</a></li>
+  <li><a href="contact.jsp">CONTACT US</a></li>
+ <li><a href="comingsoon.jsp">MORE</a></li>
+</ul>
+</head>
+<body>
+
+    
+<div class="bg-img">
+    <br><br>
+  <form action="Login" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" autofocus required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" autofocus required>
+
+    <button type="submit" class="btn">LOGIN</button>
+	<br><br>
+        New User?<br>
+        <button type="submit" class="btn"><a href="signup.jsp">REGISTER</a></button>
+  </form>
+</div>
+    
+    <br>
+    <br>
+    <br>
+    
+    
+    <div class="jumbotron text-center" style="margin-bottom:0; height:30%">
+  
+<div class="footer">
+    <center>
+             <div class="left_google">
+                 <ul class="social">
+                
+               <a class = "google" href="#">
+                   <i class="fa fa-google">
+                   </i>Continue with Google</a><br>
+               <a class= "facebook" href="#">
+                   <i class="fa fa-facebook">
+                   </i>Continue with Facebook</a>
+
+                 </center>
+             </div>
+        </div>
+        </div>
+
+    <footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+</body>
+</html>
